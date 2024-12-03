@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Correus</title>
+  <meta charset="UTF-8">
+  <h1>{{title}}</h1>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Emissor</th>
+    <th>Títol</th>
+  </tr>
+  <tr *ngFor="let correu of correuss" >
+    <div *ngIf="!correu.llegit">
+      <td>{{correu.emisor }}</td>
+      <td>{{correu.titol}}</td>
+      <p>Tens {{correuLlegit}} correus llegits</p>
+      <p>Tens {{correuNoLlegit}} correus No Llegitis</p>
+    </div>
+
+  </tr>
+</table>
+</body>
+</html>
