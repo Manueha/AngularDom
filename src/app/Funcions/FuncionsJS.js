@@ -22,5 +22,8 @@ export function  countWords () {
 
 export function  Imatge () {
   let imagen = document.getElementById("imatge")
-  imagen.innerHTML = <img src="./butano.jpeg" ></img>
+  imagen.src = "https://www.w3schools.com/css/img_fjords.jpg";
+  imagen.alt = "fjords";
+  imagen.width = "200";
+  imagen.height = "200";
 }
