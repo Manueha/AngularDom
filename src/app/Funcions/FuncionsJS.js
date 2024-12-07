@@ -27,3 +27,14 @@ export function  Imatge () {
   imagen.width = "200";
   imagen.height = "200";
 }
+
+export function mostrarLlista(idDiv, ...llistat){
+  let div = document.getElementById(idDiv)
+  let contingut = ""
+
+  for (const element of llistat) {
+    contingut = contingut.concat("<li>" + element + "</li>\n")
+  }
+  div.innerHTML ="<ul>" + contingut + "</ul>"
+
+}

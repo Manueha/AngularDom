@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 // @ts-ignore
-import  {yellowsubmarine,modificar,countWords,Imatge} from '../Funcions/FuncionsJS'
+import  {yellowsubmarine,modificar,countWords,Imatge,mostrarLlista} from '../Funcions/FuncionsJS.js'
 
 @Component({
   selector: 'app-dom-practica',
@@ -25,6 +25,8 @@ export class DomPracticaComponent implements OnInit{
     modificar();
     countWords();
     Imatge();
+    mostrarLlista("llistat", "bomboclat","si","hola");
+
   }
 
 
